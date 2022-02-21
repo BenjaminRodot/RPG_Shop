@@ -3,11 +3,11 @@
     <img src="../image/map-world.png" alt="World Map" usemap="#map-world">
     <map name="map-world">
       <area shape="rect" coords="130, 105, 315, 140"
-            href="https://www.google.fr" alt="exemple de rectangle" />
+            @click="selectTown(0)" :alt=townsList[0].name />
       <area shape="rect" coords="140, 165, 315, 210"
-            href="https://www.youtube.com" alt="exemple de rectangle" />
+            @click="selectTown(1)" :alt=townsList[1].name />
       <area shape="rect" coords="400, 115, 480, 150"
-            href="https://www.youtube.com/watch?v=5dkFBE49Zho" alt="exemple de rectangle" />
+            @click="selectTown(2)" :alt=townsList[2].name />
     </map>
     <div style="width: 50%">
       <div v-for="(town,index) in townsList" :key="index" @change="selectTown(index)">
