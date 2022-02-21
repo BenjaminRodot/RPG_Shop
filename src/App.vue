@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <World @selectTown="selectTown($event)" @selectStreet="selectStreet($event)" @selectShop="selectShop($event)"
-           :currentTown="currentTown" :currentStreet="currentStreet" :currentShop="currentShop" :towns="towns"></World>
-    <Team :currentShop="currentShop" :currentTown="currentTown" />
-  </div>
+  <table style="width: 100%">
+    <th style="width: 60%">
+      <World @selectTown="selectTown($event)" @selectStreet="selectStreet($event)" @selectShop="selectShop($event)"
+             :currentTown="currentTown" :currentStreet="currentStreet" :currentShop="currentShop" :towns="towns"></World>
+    </th>
+    <th>
+      <Team :currentShop="currentShop" :currentTown="currentTown" />
+    </th>
+  </table>
 </template>
 
 <script>
