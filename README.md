@@ -20,5 +20,10 @@ yarn build
 yarn lint
 ```
 
+### Launch app
+```
+npm start
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
